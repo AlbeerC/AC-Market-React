@@ -1,0 +1,59 @@
+@import "../../scss/variables.scss";
+
+.navbar {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    @include responsive (tablet) {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-shadow: 5px 4px 2px #ADA7C8;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+
+        input {
+            padding: 1rem 2rem;
+            border: none;
+            border-right: $grayBorder;
+        }
+        
+        button {
+            padding: .5rem 1rem;
+            background-color: $white;
+            cursor: pointer;
+            border: none;
+        }
+    }
+
+    .btn-update {
+        background-color: $black;
+        color: $white;
+        font-family: $textFont;
+        padding: .7rem 2rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 2rem;
+        font-size: 1.7rem;
+        font-weight: bold;
+
+        &:hover {
+            background-color: transparent;
+            color: $black;
+        }
+    }
+}

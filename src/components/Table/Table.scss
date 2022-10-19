@@ -1,0 +1,77 @@
+@import "../../scss/variables";
+
+table {
+    width: 90%;
+    height: auto;
+    margin: 5rem auto;
+    border-spacing: 0;
+}
+
+/* Thead */
+
+table thead {
+    background-color: #0000006d;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table thead tr th {
+    padding: 1rem 2rem;
+    cursor: default;
+
+    &:hover {
+        color: $mainColor;
+    }
+}
+
+/* Tbody */
+
+tbody tr {
+    cursor: pointer;
+}
+tbody tr:hover {
+    background-color: #00000015;
+}
+tbody tr td {
+    border-top: 2px solid #e1e1e1;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+.tbody-img {
+    height: 5rem;
+    width: 5rem;
+}
+.th-name {
+    width: 10rem;
+}
+.num {
+    font-weight: bold;
+}
+.info {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5rem;
+    align-items: center;
+    gap: 3rem;
+}
+.symbol {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.name {
+    font-size: 1.8rem;
+    font-family: monospace;
+}
+.price {
+    font-weight: bold;
+}
+.green {
+    color: #1bca1b;
+    font-weight: 700;
+}
+.red {
+    color: #c81717;
+    font-weight: 700;
+}

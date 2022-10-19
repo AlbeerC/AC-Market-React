@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+/* Variables */
+
+/* Fuentes */
+$titleFont: 'Righteous', cursive;
+$textFont: 'Vollkorn', serif;
+
+/* Colores */
+$black: #000000;
+$white: #ffffff;
+$mainColor: #7de4aa;
+
+/* Borde */
+$grayBorder: solid 2px #e1e1e1;
+
+/* Medidas responsive */
+$pc: 1200px;
+$tablet: 768px;
+
+/* Mixin para responsive */
+
+@mixin responsive ($medida) {
+    @if $medida == pc {
+        @media (max-width: $pc) {
+            @content;
+        }
+    } @else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content;
+        }
+    }
+}
